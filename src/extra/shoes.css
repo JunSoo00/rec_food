@@ -1,0 +1,186 @@
+:root{
+  --color-base : rgba(0,0,0,.8);
+  --muted : #333333;
+  --brand1: #FF5A5F;
+  --brand2: #4CAF50;
+  --brand3: #26A69A;
+  --point1 : #FFC107;
+  --point2 : #FF7043;
+  --bg-base : #FFF8F0;
+  --radius : 15px;
+  --shadow : 0 6px 20px rgba(0,0,0,.8);
+  --font-h2 : 'GMarketSans';
+  --white : #fff
+}
+
+
+.shoes-wrap {
+    max-width: 1280px;
+    min-height: 120vh;
+    margin: 0 auto;
+}
+.shoes-wrap header {
+    padding: 20px 8%;
+    background: var(--color-base);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shoes-wrap header h1 {
+    font-family: var(--font-h2);
+    font-size: 24px;
+    color: var(--brand1);
+    font-weight: 600;
+}
+.shoes-wrap header .cart {
+    font-size: 18px;
+    font-weight: 500;
+
+}
+.shoes-wrap main {
+    margin: 40px;    
+}
+.shoes-wrap main > div{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.shoes-wrap .shoes-cont {
+    display: flex;
+}
+.shoes-wrap main figure {
+    width: 60%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.shoes-wrap img {
+    max-width: 100%;
+}
+ .shoes-info {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+ .shoes-info h2 {
+    font-family: var(--font-h2);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+ .shoes-info .price {
+    font-size: 20px;
+    color: var(--highlight);
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.action{
+    margin-bottom: 25px;
+}
+.btn {
+    padding: 5px 8px;
+    border-radius: 5px;
+    background: var(--muted);
+    color: #fff;
+}
+.btn.btnPrimary {
+    background: var(--point2);
+    margin-right: 5px;
+}
+
+button[role="tab"] {
+    padding: 8px 16px;
+    background: #dfe2e2;
+    margin-right: 5px;
+    border-radius: 8px;
+}
+button[role="tab"].active {
+    background: var(--brand2);
+    color: #fff;
+}
+.tab-panel {
+    padding: 20px
+}
+
+/* modal */
+.modal-bg {
+    position: fixed;
+    inset: 0;
+    background: rgba(54, 43, 81, 0.4);
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+.modal-panel {
+    position: relative;
+    max-width: min(760px, 90vw);
+    max-height: 80vh;
+    overflow: auto;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+}
+.modal-panel img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.modal-panel button {
+    position: absolute;
+    top: 20px; right: 20px; 
+    padding: 15px;
+    cursor: pointer;
+}
+
+/* toast */
+.toast {
+  position: fixed; left: 50%; bottom: 22px; transform: translateX(-50%);
+  background: #0ea5e9; color: #fff; padding: 10px 14px; border-radius: 999px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.2); font-weight: 600;
+  animation: slideUp 0.22s ease-out both;
+}
+
+/* modal */
+/* 배경 오버레이 */
+.modal-bg {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* 모달 패널 */
+.modal-panel {
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: auto;
+}
+
+/* 닫기 버튼 */
+.modal-panel > button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: 0;
+  background: transparent;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* 모달 이미지 크기 제한 */
+.modal-image {
+  display: block;
+  max-width: 80vw;
+  max-height: 75vh;
+  width: auto;
+  height: auto;
+}

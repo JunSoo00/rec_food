@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+:root{
+  --color-base : rgba(0,0,0,.8);
+  --muted : #333333;
+  --brand1: #FF5A5F;
+  --brand2: #4CAF50;
+  --brand3: #26A69A;
+  --point1 : #FFC107;
+  --point2 : #FF7043;
+  --bg-base : #FFF8F0;
+  --radius : 15px;
+  --shadow : 0 6px 20px rgba(0,0,0,.8);
+  --font-h2 : 'GMarketSans';
+  --white : #fff
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.wrap{
+  max-width: 640px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* header */
+header .logo{
+  font-family: var(--font-h2);
+  font-size: 28px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header .logo img{
+  max-width: 120px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+header .logo span:first-child{
+  color: var(--brand1);
+}
+header .logo span:last-child{
+  color: var(--brand2);
+}
+header .gnb{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 30px;
+  border-top: 3px solid var(--brand1);
+  border-bottom: 3px solid var(--brand1);
+  margin: 10px 0;
+}
+header .gnb a{
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--brand1);
+  padding: 10px 0;
+}
+.intro-text{
+  text-align: center;
+  overflow-wrap: break-word;
 }
 
-.App-link {
-  color: #61dafb;
+/* hero-slide */
+.hero-slide div{
+  margin-bottom: 30px;
+  height: 35vh;
+  overflow: hidden;
+}
+.hero-slide div img{
+  max-width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* recommendArea */
+.recomendArea{
+  margin-top: 50px;
+}
+.recomendArea h2{
+  font-family: var(--font-h2);
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.recom-card{
+  width: 80%;
+  margin: 0 auto;
+}
+.recom-card .card{
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid var(--muted);
+  border-radius: var(--radius);
+  padding: 10px;
+}
+.recom-card .card img{
+  width: 100%;
+  aspect-ratio: 10 / 9;
+  border-radius: var(--radius);
+}
+.recom-text h3{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--brand2);
 }
