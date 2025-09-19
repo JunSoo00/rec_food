@@ -6,7 +6,7 @@ const MealsDetail = () => {
   const [item, setItem] = useState(null)
 
   useEffect(()=> {
-      fetch('/db.json')
+      fetch(`${process.env.PUBLIC_URL}/db.json`)
       .then(r => r.json())//json 형태로 데이터 변환
       .then((data) => {
         const found = data.meals.find((m) => m.id === parseInt(id));
