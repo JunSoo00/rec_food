@@ -15,8 +15,8 @@ const Navbar = () => {
         <nav className="gnb">
             <NavLink to='/'>HOME</NavLink>
             <NavLink to='/meals'>Food List</NavLink>
-            <NavLink to='/tips'>Food Selection</NavLink>
-            <NavLink to='/about'>Food video</NavLink>
+            <NavLink to='/roulette'>Food Selection</NavLink>
+            <NavLink to='/foodVideo'>Food video</NavLink>
         </nav>
     </header>
   )

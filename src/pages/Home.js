@@ -41,7 +41,7 @@ const Home = () => {
                     <img src="https://images.unsplash.com/photo-1591325418441-ff678baf78ef?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmFtZW58ZW58MHx8MHx8fDA%3D" alt="라멘" />
                 </div>
                 <div>
-                    <img src="https://images.unsplash.com/photo-1567529854338-fc097b962123?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y3Vycnl8ZW58MHx8MHx8fDA%3D" alt="커리" />
+                    <img src="https://images.unsplash.com/photo-1743419612786-19d116bb8c40?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fCVFQyVBNyVBQyVFQiVCRCU5NXxlbnwwfHwwfHx8MA%3D%3D" alt="짬뽕" />
                 </div>
                 <div>
                     <img src="https://plus.unsplash.com/premium_photo-1723672929404-36ba6ed8ab50?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3RlYWt8ZW58MHx8MHx8fDA%3D" alt="스테이크" />

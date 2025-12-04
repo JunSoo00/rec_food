@@ -3,7 +3,7 @@ import RecomCard from '../component/RecomCard';
 import 'react-tabs/style/react-tabs.css';
 import { useEffect, useState } from 'react';
 
-const Tips = () => {
+const Roulette = () => {
 
     const [recs, setRecs] = useState([]);
 
@@ -18,9 +18,7 @@ const Tips = () => {
                     //db.json에서 recommended라는 값이 true 이면 따로 모아서 새 별롣
                     const onlyRecommended = meals.filter((m) => m.recommended)
     
-                    const firstFour = onlyRecommended.slice(0, 1);
-    
-                    setRecs(firstFour);
+                    setRecs(onlyRecommended)
                 })
                 .catch((err) => {
                     console.log('db.json 로드 실패', err)
@@ -33,37 +31,22 @@ const Tips = () => {
             <Tabs>
                 <TabList>
                     <Tab>🍝양식</Tab>
-                    <Tab>🍜중식</Tab>
-                    <Tab>🍱한식</Tab>
+                    <Tab>🍜아시안식</Tab>
                 </TabList>
 
                 <TabPanel>
                     <h2>오늘의 양식</h2>
                     <div className="recom-card">
                     {
-                        recs.map((item) => (
-                            <RecomCard key={item.id} item={item}/>
-                        ))
+                        recs.filter( m => (m.catalog || '') === 'western').sort(() => Math.random() - 0.5).slice(0,1).map(item => <RecomCard key={item.id} item={item} />)
                     }
                 </div>
                 </TabPanel>
                 <TabPanel>
-                    <h2>오늘의 중식</h2>
+                    <h2>오늘의 아시안식</h2>
                     <div className="recom-card">
                     {
-                        recs.map((item) => (
-                            <RecomCard key={item.id} item={item}/>
-                        ))
-                    }
-                </div>
-                </TabPanel>
-                <TabPanel>
-                    <h2>오늘의 한식</h2>
-                    <div className="recom-card">
-                    {
-                        recs.map((item) => (
-                            <RecomCard key={item.id} item={item}/>
-                        ))
+                        recs.filter( m => (m.catalog || '') === 'asian').sort(() => Math.random() - 0.5).slice(0,1).map(item => <RecomCard key={item.id} item={item} />)
                     }
                 </div>
                 </TabPanel>
@@ -72,4 +55,4 @@ const Tips = () => {
     )
 }
 
-export default Tips
+export default Roulette

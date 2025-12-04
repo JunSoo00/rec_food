@@ -12,7 +12,9 @@
   --font-h2 : 'GMarketSans';
   --white : #fff
 }
-
+img{
+  object-fit: contain;
+}
 
 .wrap{
   max-width: 640px;
@@ -25,8 +27,8 @@ header .logo{
   font-size: 28px;
 }
 header .logo img{
-  max-width: 120px;
-  margin-right: 20px;
+  max-width: 80px;
+  margin: 20px 20px 20px 0;
   vertical-align: middle;
 }
 header .logo span:first-child{
@@ -63,6 +65,7 @@ header .gnb a{
 }
 .hero-slide div img{
   max-width: 100%;
+  height: 35vh;
 }
 
 /* recommendArea */
@@ -107,7 +110,7 @@ header .gnb a{
 }
 .card img{
   display: block;
-  width: 50%;
+  width: 100%;
   height: 300px;
   border-radius: 10px;
   margin: auto;

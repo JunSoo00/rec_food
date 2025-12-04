@@ -19,3 +19,6 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+//React.StricMode : 기본으로 있음
+//Routes / Route를 사용하기 위해 BrowserRouter, HashRouter 사용.
