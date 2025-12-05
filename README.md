@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# 📌 Project : MenuRoulette
+> 메뉴 선택에 도움을 줄 수 있는 랜덤 메뉴 추천 UI로, React기반으로 구현한 모바일 전용 애플리케이션입니다.
+>
+> 컴포넌트 단위 설계와 상태 관리(Hooks) 활용에 중점을 두었습니다.
+>
+> JSON 파일 구조를 기반으로 음식 리스트를 동적으로 확장할 수 있어, 데이터 변경에 유연하게 대응할 수 있는 구조적 장점을 가지고 있습니다.
+>
+> 상업적 목적이 없는 학습 및 개인 포트폴리오용입니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br>
 
-## Available Scripts
+## 🖥️ Live Demo
+🔗 배포 링크 : https://junsoo00.github.io/rec_food/
 
-In the project directory, you can run:
+<br>
 
-### `npm start`
+## ✨Features
+- 메인페이지, 음식 리스트 페이지, 음식 룰렛 페이지, 비디오 페이지 UI 컴포넌트 단위로 설계
+- React 기반 이미지 슬라이더(Carousel)를 적용한 반응형 UI
+- JSON 파일 구조를 기반으로 한 확장성 있는 컨텐츠 구조
+- Math.random 메소드를 활용한 메뉴 렌덤 뽑기
+- Video를 통한 음식에 대한 사용자 몰입도 향상
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  <br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📒Development Notes
+- 첫 화면에서 Carousel을 활용한 반응형 이미지 슬라이더를 구현하여 사용자들이 흥미를 느낄 수 있도록 시각적 요소를 강화하였습니다.
+- JSON 파일 항목들에 recommend 태그를 설정하여 추천 음식만 따로 필터링 해서 보여주는 데이터 기반 추천 로직을 구현했습니다.
+-  'Food List' 페이지에선 등록된 모든 음식 데이터를 시각적으로 정리하여, 사용자가 전체 메뉴 옵션을 한눈에 파악할 수 있도록 구성했습니다.
+-  ‘Food Selection’ 페이지에서는 음식에 등록된 태그(예: 양식, 아시안식)를 기준으로 그룹을 구분하고, 해당 그룹에 포함된 음식 중 하나가 Math.random() 기반 랜덤 로직으로 선택되도록 구현했습니다. 또한 페이지 리프레시 또는 버튼 클릭(tap) 시 새로운 음식이 선택되어 동적인 사용자 경험을 제공합니다.
+-  ‘Food Video’ 페이지는 음식 관련 영상을 삽입하여 메뉴 선택 과정에서 사용자의 감각적 몰입감을 높이고, 음식 선택에 대한 흥미를 자연스럽게 유도하는 UX 흐름을 강화했습니다.
 
-### `npm test`
+<br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🔍 More Information
 
-### `npm run build`
+[Velog - 작업일지](https://velog.io/@juns00/%EC%9E%91%EC%97%85%EA%B8%B0%EB%A1%9D-04.-MenuRoulettereact)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Portfolio](https://junsoo00.github.io/portfolio/)
