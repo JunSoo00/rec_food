@@ -1,4 +1,3 @@
-import React from 'react'
 import video from '../asset/rec_food_movie.mp4'
 const FoodVideo = () => {
   return (

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import MealCard from '../component/MealCard';
 import RecomCard from '../component/RecomCard';
 import '../App.css'
